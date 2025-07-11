@@ -4,7 +4,7 @@ from torchvision import transforms
 from PIL import Image, ImageEnhance, ImageStat, ImageFilter
 import numpy as np
 from pandas import read_csv
-from IPython.display import display, HTML
+import streamlit.components.v1 as components
 import matplotlib.pyplot as plt
 import io
 import base64
@@ -244,7 +244,7 @@ def dashboard_view():
             html += f'<br><h3>Condition Score Trend</h3><img src="data:image/png;base64,{chart_base64}" width="600">'
         except Exception as chart_err:
             html += f"<p>Could not generate chart: {chart_err}</p>"
-        return HTML(html)
+        return components.html(html, height=700, scrolling=True)
     except Exception as e:
         return f"Dashboard not available: {e}"
 # Assume you have these defined already
