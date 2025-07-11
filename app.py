@@ -243,7 +243,7 @@ with tab1:
 
     if uploaded_image is not None:
         image = Image.open(uploaded_image)
-        st.image(image, caption="Uploaded Image", use_column_width=True)
+        st.image(image, caption="Uploaded Image", use_container_width=True)
 
         if st.button("Analyze Condition"):
             result = predict_condition(image, simulate_damage, category)
