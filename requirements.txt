@@ -1,10 +1,9 @@
 streamlit
 torch
-torchvision
 transformers
 Pillow
+opencv-python-headless
 numpy
 pandas
 matplotlib
-opencv-python
 fpdf
