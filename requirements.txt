@@ -1,1 +1,10 @@
-
+streamlit
+torch
+torchvision
+transformers
+Pillow
+numpy
+pandas
+matplotlib
+opencv-python
+fpdf
